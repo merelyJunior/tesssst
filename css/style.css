@@ -1,0 +1,1089 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0 !important;
+  -webkit-appearance: none;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+section {
+  height: 100vh;
+  min-height: 1000px;
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #fff;
+
+  background-color: #040c18;
+}
+.lock {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  display: block;
+  transition: 0.3s ease;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Literata", serif;
+  font-weight: 700;
+  line-height: normal;
+}
+.d-none {
+  display: none;
+}
+.f-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ta-c {
+  text-align: center;
+}
+.container {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 135px;
+  z-index: 3;
+}
+.inner {
+  padding: 75px 0px;
+}
+.hero {
+  text-align: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.8;
+}
+.hero .container {
+  padding-top: 250px;
+}
+.bg-grad {
+  position: absolute;
+  height: 100vh;
+  min-height: 1000px;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 2s linear;
+  transition: opacity 2s linear;
+}
+.one {
+  background: transparent url(../img/bg.webp) no-repeat;
+  background-size: cover;
+}
+.two {
+  background: transparent url(../img/bg2.webp) no-repeat;
+  background-size: cover;
+}
+.three {
+  background: transparent url(../img/bg3.webp) no-repeat;
+  background-size: cover;
+}
+.bg-grad.active {
+  opacity: 1;
+}
+.main-title {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 72px;
+  line-height: 80px;
+  background: linear-gradient(181.94deg, #0053ff -8.85%, #fad43c 83.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-title strong {
+  background: linear-gradient(181.94deg, #ffffff -8.85%, #ffffff 83.2%);
+  -webkit-background-clip: text;
+}
+.cta {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.123);
+  margin-top: 100px;
+  padding: 25px 50px;
+  border: 1px solid;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+}
+.cta:hover {
+  box-shadow: 0 0 40px 40px #4074cd inset;
+  border: 1px solid #fad43c;
+}
+.main-subtitle {
+  background-color: rgba(255, 255, 255, 0.123);
+  font-size: 22px;
+  position: relative;
+  z-index: 5;
+}
+.main-subtitle span {
+  display: block;
+  max-width: 1215px;
+  padding: 50px 0px;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-weight: 300;
+}
+.right-now {
+  position: relative;
+}
+.right-now::before {
+  content: "";
+  position: absolute;
+  width: 701px;
+  height: 496px;
+  right: -20%;
+  top: -20%;
+  background: #072d56;
+  filter: blur(304px);
+}
+.right-now::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 0;
+  bottom: -35%;
+  background: #07325f;
+  filter: blur(300px);
+}
+.right-now__desc {
+  max-width: 480px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 50px;
+}
+.third-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 34px;
+  line-height: 45px;
+  background: linear-gradient(89.97deg, #ffff89 1.84%, #678ef4 102.67%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.right-now__desc p {
+  font-weight: 300;
+  line-height: 40px;
+}
+.kharkiv-img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.kyiv-img {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+}
+.chernihiv-img {
+  position: absolute;
+  bottom: -60%;
+  right: 10%;
+}
+.tokens {
+  position: relative;
+  overflow: hidden;
+  min-height: 1200px;
+  padding: 150px 0px;
+}
+#firstCarous {
+  transform: rotate(-5deg) translateX(-50px);
+  width: 2000px;
+}
+#secondCarous {
+  margin-top: 200px;
+  transform: rotate(5deg) translateX(-50px);
+  width: 2000px;
+}
+.scroll {
+  position: absolute;
+  top: 54%;
+  right: 10%;
+  letter-spacing: 10px;
+  font-family: "Work Sans", sans-serif;
+  transform: translate3d(0, 0%, 0);
+  animation: spin 2.4s infinite linear;
+  opacity: 0.3;
+}
+.scroll::before {
+  content: "";
+  position: absolute;
+  top: -130%;
+  left: 0%;
+  background: url(../img/arrow.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+}
+.scroll::after {
+  content: "";
+  position: absolute;
+  bottom: -130%;
+  right: 0;
+  background: url(../img/arrow.png);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  /* transform: rotate(180deg); */
+}
+@keyframes spin {
+  0% {
+    transform: translate3d(0, -20%, 0);
+  }
+  50% {
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    transform: translate3d(0, -20%, 0);
+  }
+}
+.card-row {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 2000px;
+  max-height: 500px;
+  margin: 0;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-5deg) translateY(-80px);
+  transform-origin: right top;
+}
+.card-row > a {
+  display: block;
+  padding: 5px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+.card-item {
+  width: 250px;
+  margin: 25px;
+  background-color: #172838;
+  border-radius: 30px;
+}
+.card-item__img {
+  display: inline-flex;
+  margin-top: 25px;
+  margin-left: 23px;
+  position: relative;
+  z-index: 3;
+}
+.card-item__img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  right: -10px;
+  bottom: 0px;
+  left: 10px;
+  border: 2px solid #394855;
+  border-radius: 30px;
+}
+.card-item__desc {
+  margin: 15px auto;
+  max-width: 210px;
+}
+.desc-top {
+  display: flex;
+  align-items: center;
+}
+.desc-img {
+  width: 35px;
+  height: 35px;
+}
+.desc-name {
+  max-width: 95px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-weight: 800;
+}
+.desc-name span {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.count {
+  margin-left: 10px;
+}
+.desc-bottom {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.desc-bottom .title {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Work Sans", sans-serif;
+}
+.desc-bottom .price {
+  font-family: "Oxanium", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+.second-title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 48px;
+  line-height: 75px;
+  text-align: center;
+  background: linear-gradient(89.97deg, #ffff89 1.84%, #6775f4 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.head-illustration {
+  margin: 0 auto;
+  max-width: 500px;
+  display: block;
+}
+.funds {
+  position: relative;
+  min-height: 1800px;
+}
+
+.funds::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      180deg,
+      #040c18 0%,
+      #000000 36.98%,
+      #000000 65.62%,
+      #040c18 100%
+    ),
+    linear-gradient(180deg, rgba(4, 12, 24, 0.42) 79.46%, #040c18 100%);
+}
+.funds .container {
+  padding-top: 400px;
+}
+.funds-content {
+  position: relative;
+  z-index: 4;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #81afdd;
+}
+.funds-content span,
+.donate-title {
+  display: block;
+  position: relative;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.funds-content span::after,
+.donate-title::after {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 3px;
+  background: linear-gradient(103.22deg, #677efa -13.86%, #f4ee67 99.55%),
+    #ffffff;
+}
+.funds-content .funds-desc:nth-child(2) span::after,
+.donate-title::after {
+  left: 0;
+  top: 10px;
+}
+.funds-content .funds-desc:nth-child(3) span::after {
+  right: 35%;
+  top: 10px;
+}
+.funds-content .funds-desc:nth-child(4) span::after {
+  left: 41%;
+  right: 0;
+  top: 10px;
+}
+.funds-content .funds-desc:nth-child(2) {
+  max-width: 220px;
+  position: absolute;
+  top: 10%;
+}
+.funds-content .funds-desc:nth-child(3) {
+  max-width: 220px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  text-align: right;
+}
+.funds-content .funds-desc:nth-child(4) {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 715px;
+  text-align: center;
+}
+
+.parallax {
+  position: relative;
+  padding: 250px 0px;
+  background: url("../img/parallax.webp") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      180deg,
+      #040c18 10.94%,
+      rgba(4, 12, 24, 0.39) 30.73%
+    ),
+    linear-gradient(180deg, rgba(4, 12, 24, 0.42) 79.46%, #040c18 100%);
+}
+
+.mint-card {
+  text-align: center;
+  max-width: 600px;
+  /* height: 400px; */
+  margin: 0 auto;
+  border-radius: 30px;
+  background: rgba(4, 12, 24, 0.7);
+  border: 1px solid #f5e9c7;
+}
+.mint-card .third-title {
+  margin-top: 30px;
+  background: linear-gradient(102.88deg, #fff740 15.46%, #3430fb 98.02%),
+    #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mint-card strong {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+.mint-card__text {
+  font-weight: 300;
+  margin: 10px 0px;
+}
+.mint-card__text span {
+  color: #ffce4e;
+  font-weight: 800;
+}
+.mint-card .cta {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 15px 10px;
+}
+
+.donate-card {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  max-width: 1770px;
+  background: rgba(4, 44, 84, 0.6);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.donate-card:before {
+  content: "";
+  position: absolute;
+  width: 623px;
+  height: 558px;
+  right: -30%;
+  bottom: -50%;
+  background: #1b78de;
+  filter: blur(200px);
+  border-radius: 20px;
+}
+.donate-card::after {
+  content: "";
+  position: absolute;
+  width: 623px;
+  height: 200px;
+  left: -30%;
+  top: -50%;
+  background: #1b78de;
+  filter: blur(200px);
+  border-radius: 20px;
+}
+.donate-card__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.desc {
+  max-width: 540px;
+  text-align: left;
+  z-index: 3;
+}
+.comeback {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+.donate-logo {
+  width: 50px;
+  height: 50px;
+}
+.donate-note {
+  max-width: 400px;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.link {
+  position: relative;
+  font-size: 12px;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+.desc strong {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #81afdd;
+}
+.coat-img {
+  width: 350px;
+  height: 350px;
+  z-index: 3;
+}
+.footer p {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 12px;
+}
+.ukrheart {
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+}
+
+.onboard-container {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0.7em;
+  padding: 4em;
+  background: white;
+  min-width: 500px;
+  text-align: center;
+}
+
+.onboard {
+  background-color: rgb(76, 0, 255);
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7em;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 0.3em;
+  margin-top: 2em;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: none;
+}
+
+.account {
+  background: rgb(233, 233, 233);
+  padding: 0.3em;
+  border-radius: 0.3em;
+  position: relative;
+  display: inline-block;
+  text-indent: 1.2em;
+}
+
+.account:before {
+  position: absolute;
+  content: "";
+  background: green;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  left: 0.5em;
+  top: 0.6em;
+}
+
+.up {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 10em;
+  display: none;
+}
+
+.confetti {
+  position: absolute;
+  width: 20em;
+  z-index: 2;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  section,
+  .bg-grad {
+    min-height: 800px;
+  }
+  .hero .container {
+    padding-top: 170px;
+  }
+  .container {
+    padding: 0 100px;
+  }
+  .tokens {
+    padding: 75px 0px;
+  }
+  .funds .container {
+    padding-top: 150px;
+  }
+  .funds {
+    min-height: 1400px;
+  }
+  .head-illustration {
+    max-width: 400px;
+  }
+  .donate-card__inner {
+    max-width: 900px;
+  }
+  .desc {
+    max-width: 450px;
+  }
+  .donate-note {
+    max-width: 325px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero .container {
+    padding-top: 150px;
+  }
+  .container {
+    padding: 0 50px;
+  }
+  .main-subtitle span {
+    max-width: 900px;
+    margin-top: 50px;
+  }
+  .cta {
+    margin-top: 75px;
+  }
+  .main-subtitle {
+    font-size: 18px;
+  }
+  .kharkiv-img,
+  .kyiv-img,
+  .chernihiv-img {
+    width: 250px;
+    height: 200px;
+  }
+  .right-now__desc {
+    margin-top: 0;
+  }
+  .kyiv-img {
+    left: 20%;
+  }
+  .chernihiv-img {
+    bottom: -40%;
+  }
+  .scroll {
+    top: 47%;
+  }
+  .coat-img {
+    width: 250px;
+    height: 250px;
+  }
+  .donate-card__inner {
+    max-width: 700px;
+  }
+  .donate-note {
+    max-width: 250px;
+  }
+  .third-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .link::before {
+    width: 90%;
+  }
+  .donate-card::after {
+    left: -40%;
+    top: -15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 48px;
+    line-height: 54px;
+  }
+  section,
+  .bg-grad {
+    min-height: 400px;
+  }
+  .main-subtitle span {
+    max-width: 700px;
+  }
+  .main-subtitle span {
+    padding: 25px 0px;
+  }
+  .right-now__desc {
+    text-align: right;
+    max-width: 350px;
+  }
+  .kharkiv-img {
+    left: 7%;
+  }
+  .kyiv-img {
+    top: 60%;
+    left: 12%;
+  }
+  .chernihiv-img {
+    bottom: -30%;
+    right: 15%;
+  }
+  .second-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .head-illustration {
+    max-width: 300px;
+    padding-top: 100px;
+  }
+  .funds-content .funds-desc:nth-child(2) {
+    max-width: 175px;
+    top: 0%;
+  }
+  .funds-content .funds-desc:nth-child(3) {
+    top: 10%;
+    max-width: 150px;
+  }
+  .funds-content .funds-desc:nth-child(3) span::after {
+    right: 50%;
+  }
+  .funds-content .funds-desc:nth-child(4) {
+    margin-top: 50px;
+  }
+  .funds {
+    min-height: 1000px;
+  }
+  .funds-content span,
+  .donate-title {
+    font-size: 21px;
+  }
+  .donate-card {
+    margin-top: 250px;
+  }
+  .donate-card__inner {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .donate-title::after {
+    left: 30%;
+  }
+  .desc {
+    max-width: 500px;
+    text-align: center;
+  }
+  .comeback {
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .donate-note {
+    margin: 0;
+    max-width: 425px;
+    line-height: 20px;
+  }
+  .link::before {
+    width: 100%;
+  }
+  .desc strong {
+    margin-top: 30px;
+  }
+  .coat-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+  }
+  .footer p {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 568px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .hero .container {
+    padding: 0 20px;
+    padding-top: 100px;
+  }
+  .main-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .cta {
+    margin-top: 50px;
+    max-width: 150px;
+    padding: 10px 20px;
+  }
+  .main-subtitle span {
+    padding: 15px 0px;
+    max-width: 450px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .right-now {
+    min-height: 1200px;
+  }
+  .right-now__desc {
+    text-align: center;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+  .kharkiv-img,
+  .kyiv-img,
+  .chernihiv-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 15px auto;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .inner {
+    padding: 25px 0px;
+  }
+  #firstCarous,
+  #secondCarous {
+    transform: rotate(0) translateX(0);
+  }
+  .scroll {
+    display: none;
+  }
+  #secondCarous {
+    margin-top: 0px;
+  }
+  .tokens {
+    padding-top: 200px;
+    min-height: 900px;
+  }
+  .scroll {
+    top: 50%;
+    right: 33%;
+  }
+  .card-item {
+    margin: 25px 0px;
+  }
+  .card-item__img {
+    margin-left: 10px;
+  }
+  .card-item__desc {
+    max-width: 225px;
+  }
+  .desc-img {
+    width: 40px;
+    height: 30px;
+  }
+  .funds .container {
+    padding-top: 0px;
+  }
+  .funds-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .funds-content .funds-desc:nth-child(2),
+  .funds-content .funds-desc:nth-child(3) {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .head-illustration {
+    display: none;
+  }
+  .funds-content .funds-desc:nth-child(2) span::after,
+  .donate-title::after,
+  .funds-content .funds-desc:nth-child(3) span::after,
+  .funds-content .funds-desc:nth-child(4) span::after {
+    left: 45%;
+    top: 10px;
+  }
+  .funds::before {
+    background: linear-gradient(
+        180deg,
+        #040c18 0%,
+        #000000 6.98%,
+        #000000 65.62%,
+        #040c18 100%
+      ),
+      linear-gradient(180deg, rgba(4, 12, 24, 0.42) 79.46%, #040c18 100%);
+  }
+  .comeback {
+    max-width: 400px;
+  }
+  .donate-note {
+    margin: 0;
+    margin-top: 15px;
+    max-width: 300px;
+  }
+  .comeback {
+    display: flex;
+    flex-direction: column;
+  }
+  .third-title {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    max-width: 300px;
+  }
+  .coat-img {
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+  }
+  .footer p {
+    padding-top: 75px;
+  }
+  .funds {
+    margin: 200px auto;
+  }
+  .donate-card__inner {
+    padding-top: 25px;
+  }
+  .donate-logo {
+    width: 25px;
+    height: 25px;
+  }
+  .desc {
+    padding: 0px 5px;
+  }
+  .desc strong {
+    margin-top: 10px;
+  }
+  .coat-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer p {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    padding: 0px 5px;
+  }
+  .right-now {
+    min-height: 1050px;
+  }
+  .tokens {
+    min-height: 700px;
+  }
+  .funds {
+    min-height: 1200px;
+  }
+  .right-now__desc p {
+    line-height: 24px;
+  }
+  .kharkiv-img,
+  .kyiv-img,
+  .chernihiv-img {
+    width: 250px;
+    height: 200px;
+  }
+  .tokens {
+    padding: 0;
+  }
+
+  .second-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
